@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Classification</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #fff;
+      color: #333;
+      text-align: center;
+    }
+
+    header.navbar {
+      padding: 20px 50px;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      margin-left: 30px;
+      color: #444;
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    .nav-links a.active {
+      color: #28a745;
+    }
+
+    h1 {
+      margin-top: 80px;
+      font-size: 36px;
+      color: #333;
+    }
+
+    form {
+      margin-top: 40px;
+    }
+
+    label {
+      font-size: 18px;
+      margin-right: 10px;
+    }
+
+    input[type="file"] {
+      padding: 10px;
+      width: 50%;
+      max-width: 500px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+    button {
+      margin-top: 30px;
+      background-color: #28a745;
+      color: white;
+      border: none;
+      padding: 15px 40px;
+      font-size: 18px;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+
+    button:hover {
+      background-color: #218838;
+    }
+
+    @media (max-width: 768px) {
+      input[type="file"] {
+        width: 90%;
+      }
+
+      button {
+        width: 90%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">MUNICIPAL WASTE CLASSIFICATION</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="predict.html" class="active">Predict</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <h1>Image Classification</h1>
+
+  <form action="/predict" method="POST" enctype="multipart/form-data">
+    <label for="file">Upload Your Image :</label><br><br>
+    <input type="file" name="file" id="file" required><br><br>
+    <button type="submit">predict</button>
+  </form>
+
+</body>
+</html>
+

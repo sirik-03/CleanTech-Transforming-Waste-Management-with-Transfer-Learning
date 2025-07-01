@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>About Us - Waste Classification</title>
+  <link rel="stylesheet" href="style.css" />
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #fff;
+      color: #222;
+    }
+
+    header.navbar {
+      padding: 20px 50px;
+      background: #fff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid #eee;
+    }
+
+    .logo {
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    .nav-links a {
+      margin-left: 30px;
+      color: #444;
+      text-decoration: none;
+      position: relative;
+      font-weight: 500;
+      font-size: 15px;
+    }
+
+    .nav-links a.active {
+      color: #e83960;
+    }
+
+    .about-section {
+      max-width: 1200px;
+      margin: 60px auto;
+      padding: 0 30px;
+      text-align: center;
+    }
+
+    .about-section h4 {
+      color: #e83960;
+      background: #fde7eb;
+      display: inline-block;
+      padding: 8px 20px;
+      border-radius: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+
+    .about-section h2 {
+      font-size: 36px;
+      margin-top: 10px;
+    }
+
+    .about-section h2 span {
+      color: #e83960;
+    }
+
+    .about-section p {
+      margin-top: 20px;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .about-grid {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin-top: 50px;
+    }
+
+    .about-grid > div {
+      flex: 1 1 45%;
+      padding: 20px;
+      text-align: left;
+    }
+
+    .about-grid ul {
+      list-style: none;
+      padding: 0;
+      margin-top: 30px;
+    }
+
+    .about-grid li {
+      margin-bottom: 20px;
+      position: relative;
+      padding-left: 30px;
+    }
+
+    .about-grid li::before {
+      content: "🗸";
+      position: absolute;
+      left: 0;
+      color: #e83960;
+      font-size: 18px;
+    }
+
+    .learn-more-btn {
+      display: inline-block;
+      padding: 12px 25px;
+      border: 2px solid #e83960;
+      color: #e83960;
+      border-radius: 25px;
+      font-weight: 500;
+      text-decoration: none;
+      margin-top: 20px;
+      transition: all 0.3s ease;
+    }
+
+    .learn-more-btn:hover {
+      background: #e83960;
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .about-grid {
+        flex-direction: column;
+      }
+
+      .about-grid > div {
+        flex: 1 1 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">MUNICIPAL WASTE CLASSIFICATION</div>
+    <nav class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html" class="active">About</a>
+      <a href="predict.html">Predict</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section class="about-section">
+    <h4>ABOUT</h4>
+    <h2>Learn More <span>About Us</span></h2>
+    <p>GreenGuard Insights is a pioneering organization dedicated to enhancing the efficiency and sustainability of municipal waste management.</p>
+
+    <div class="about-grid">
+      <div>
+        <p>
+          Our team comprises innovative scientists, technologists, and environmental experts committed to leveraging advanced classification technologies to ensure that waste is sorted accurately and managed effectively.
+        </p>
+        <ul>
+          <li>Comprehensive analysis and classification of municipal waste based on type and recyclability.</li>
+          <li>Continuous monitoring of waste processing to ensure efficient recycling and disposal.</li>
+          <li>Innovative solutions to minimize landfill use by identifying and separating recyclable materials early in the waste management process.</li>
+        </ul>
+      </div>
+
+      <div>
+        <p>
+          Our team is our greatest asset. We are a diverse group of experts in fields such as environmental science, data analytics, software engineering, and waste management.
+          Together, we bring a wealth of knowledge and experience to tackle the challenges of municipal waste classification and management.
+        </p>
+        <a href="contact.html" class="learn-more-btn">Learn More</a>
+      </div>
+    </div>
+  </section>
+
+</body>
+</html>
